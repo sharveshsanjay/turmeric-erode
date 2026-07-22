@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", sans-serif;
+    background-color: #FFFFFF;
+    color: #0F0F10;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom Apple Glassmorphism and Utility Styles */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.glass-panel-dark {
+  background: rgba(15, 15, 16, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hide scrollbar for clean continuous Apple look */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(229, 169, 60, 0.5);
+}
+
+/* Hide canvas focus outline */
+canvas {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Apple typography helpers */
+.text-balance {
+  text-wrap: balance;
+}
+
+.tracking-tight-apple {
+  letter-spacing: -0.025em;
+}
+
+.tracking-wide-apple {
+  letter-spacing: 0.15em;
+}

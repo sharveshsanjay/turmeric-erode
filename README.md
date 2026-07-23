@@ -117,7 +117,7 @@ Contributions are welcome! To contribute to this project:
 
 1. **Fork the repository**
    ```bash
-   git clone https://github.com/yourusername/erode-turmeric-city.git
+   git clone https://github.com/sharveshsanjay/turmeric-erode.git
    ```
 
 2. **Create a feature branch**
